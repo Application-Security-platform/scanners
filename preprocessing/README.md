@@ -1,0 +1,1 @@
+kubectl create configmap preprocess-scripts --from-file=preprocess_data.py --from-file=store_data.py --from-file=multi_format_parser.py --from-file=requirements.txt

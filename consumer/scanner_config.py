@@ -1,3 +1,5 @@
+# add scanner commands and images here
+
 SCANNER_CONFIGS = {
     "sast": {
         "semgrep": {

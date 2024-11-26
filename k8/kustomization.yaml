@@ -1,0 +1,19 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+- scanner-consumer-deployment.yaml
+
+configMapGenerator:
+- name: scanner-consumer-scripts
+  files:
+  - consumer.py
+  - requirements.txt=scanner-requirements.txt
+  - scanner_config.py
+
+- name: preprocess-scripts
+  files:
+  - preprocess_data.py
+  - store_data.py
+  - multi_format_parser.py
+  - requirements.txt=preprocess-requirements.txt
