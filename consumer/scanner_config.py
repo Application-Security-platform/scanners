@@ -13,17 +13,6 @@ SCANNER_CONFIGS = {
                 "{output_path}"
             ]
         },
-        # "sonarqube": {
-        #     "image": "sonarsource/sonar-scanner-cli:latest",
-        #     "command": [
-        #         "sonar-scanner",
-        #         "-Dsonar.projectBaseDir={source_path}",
-        #         "-Dsonar.projectKey={project_key}",
-        #         "-Dsonar.sources=.",
-        #         "-Dsonar.host.url={sonar_host}",
-        #         "-Dsonar.java.binaries=."
-        #     ]
-        # }
     },
     "secrets": {
         "gitleaks": {

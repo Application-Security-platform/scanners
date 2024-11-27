@@ -17,7 +17,7 @@ spec:
       serviceAccountName: scanner-consumer-sa
       containers:
         - name: consumer
-          image: python:3.12-slim
+          image: scanners:latest
           command: ["/bin/sh", "-c"]
           args:
             - |

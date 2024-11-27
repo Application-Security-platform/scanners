@@ -1,5 +1,4 @@
 confluent-kafka==2.6.1
 kubernetes==31.0.0
-pymongo==4.10.1
 six>=1.10.0
 
